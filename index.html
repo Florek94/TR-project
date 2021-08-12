@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TR-project</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="vendor/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav class="navigation">
         <div class="container">
@@ -31,83 +34,112 @@
                 </li>
             </ul>
         </div>
-    
-    <header class="splash">
-        <div class="splash-inner">
-            <h1 class="page-title">Welcome to our studio!</h1>
-            <h2 class="page-subtitle"><span>IT'S NICE TO MEET YOU</span></h2>
-                <a href="#" class="btn btn-one">TELL ME MORE</a>
-        </div>
-    </header>
+
+        <header class="splash">
+            <div class="splash-inner">
+                <h1 class="page-title">Welcome to our studio!</h1>
+                <h2 class="page-subtitle"><span>IT'S NICE TO MEET YOU</span></h2>
+                <div>
+                    <a href="#" class="btn btn-one">TELL ME MORE</a>
+                </div>
+            </div>
+        </header>
     </nav>
     <section class="services">
-        <div class="wrap-container">
+        <div class="wrap-container container">
             <h1 class="title"><span>SERVICES</span></h1>
             <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
             <div class="row align-items-start">
-                <div class="col">
-                    <ul>
-                        <li><a href="#"><i class="fas fa-shopping-basket fa-4x"></i></a></li>
+                <div class="col-md-4 services-list-container">
+                    <ul class="services-list">
+                        <li class="services-list-item"><a class="services-list-item-link" href="#"><i
+                                    class="fas fa-shopping-basket fa-4x"></i></a></li>
                     </ul>
                     <h1><span>E-commerce</span></h1>
-                    <p>Curabitur pellentesque ex sit amet nibh condimentum commodo vel vel neque. Morbi aliquam porta urna, sed eleifend elit euismod sed. Cras consectetur libero purus, at elementum purus cursus vel.</p>
-                    </div>
-                <div class="col">
+                    <p>Curabitur pellentesque ex sit amet nibh condimentum commodo vel vel neque. Morbi aliquam porta
+                        urna, sed eleifend elit euismod sed. Cras consectetur libero purus, at elementum purus cursus
+                        vel.</p>
+                </div>
+                <div class="col-md-4 services-list-container">
                     <ul>
-                        <li><a href="#"><i class="fas fa-check fa-4x"></i></a></li>
+                        <li class="services-list-item"><a class="services-list-item-link" href="#"><i
+                                    class="fas fa-check fa-4x"></i></a></li>
                     </ul>
                     <h1><span>Responsive Web</span></h1>
-                    <p>Curabitur pellentesque ex sit amet nibh condimentum commodo vel vel neque. Morbi aliquam porta urna, sed eleifend elit euismod sed. Cras consectetur libero purus, at elementum purus cursus vel.</p>
+                    <p>Curabitur pellentesque ex sit amet nibh condimentum commodo vel vel neque. Morbi aliquam porta
+                        urna, sed eleifend elit euismod sed. Cras consectetur libero purus, at elementum purus cursus
+                        vel.</p>
                 </div>
-                <div class="col">
+                <div class="col-md-4 services-list-container">
                     <ul>
-                        <li><a href="#"><i class="fas fa-lock fa-4x"></i></a></li>
+                        <li class="services-list-item"><a class="services-list-item-link" href="#"><i
+                                    class="fas fa-lock fa-4x"></i></a></li>
                     </ul>
                     <h1><span>Web Security</span></h1>
-                    <p>Curabitur pellentesque ex sit amet nibh condimentum commodo vel vel neque. Morbi aliquam porta urna, sed eleifend elit euismod sed. Cras consectetur libero purus, at elementum purus cursus vel.</p>
+                    <p>Curabitur pellentesque ex sit amet nibh condimentum commodo vel vel neque. Morbi aliquam porta
+                        urna, sed eleifend elit euismod sed. Cras consectetur libero purus, at elementum purus cursus
+                        vel.</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="portfolio">
-        <div class="container-parent">
+        <div class="container-parent container">
             <h1 class="title"><span>OUR PORTFOLIO</span></h1>
             <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-            <div class="row align-items-start">
-                <div class="col-2">
-                    <img src="https://images.pexels.com/photos/761963/pexels-photo-761963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                    <h1 class="title"><span>Ebony & Ivory</span></h1>
-                    <p class="subtitle">Branding</p> 
+            <div class="row align-items-start style">
+                <div class="col-md-4">
+                    <img class="portfolio-img"
+                        src="https://images.pexels.com/photos/761963/pexels-photo-761963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    <div class="portfolio-title">
+                        <h1 class="title"><span>Ebony & Ivory</span></h1>
+                        <p class="subtitle">Branding</p>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <img src="https://images.pexels.com/photos/5797903/pexels-photo-5797903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"> 
-                    <h1 class="title"><span>Smart Stationary</span></h1>
-                    <p class="subtitle">Print Design</p>  
+                <div class="col-md-4">
+                    <img class="portfolio-img"
+                        src="https://images.pexels.com/photos/5797903/pexels-photo-5797903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    <div class="portfolio-title">
+                        <h1 class="title"><span>Smart Stationary</span></h1>
+                        <p class="subtitle">Print Design</p>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <img src="https://images.pexels.com/photos/7550311/pexels-photo-7550311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                    <h1 class="title"><span>Clever Poster</span></h1>
-                    <p class="subtitle">Print Design</p> 
-                </div>
-            </div>
-            <div class="row align-items-start">     
-                <div class="col-2">
-                    <img src="https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                    <h1 class="title"><span>Vinyl Record</span></h1>
-                    <p class="subtitle">Product Mock-Up</p> 
-                </div> 
-                <div class="col-2">
-                    <img src="https://images.pexels.com/photos/6272174/pexels-photo-6272174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                    <h1 class="title"><span>Treehouse Template</span></h1>
-                    <p class="subtitle">Web Design</p> 
-                </div> 
-                <div class="col-2">
-                    <img src="https://icdn.2cda.pl/obr/oryginalne/aa89e948554cd61239126224a70bdaa2.jpg">
-                    <h1 class="title"><span>Burned Logo</span></h1>
-                    <p class="subtitle">Branding</p> 
+                <div class="col-md-4">
+                    <img class="portfolio-img"
+                        src="https://images.pexels.com/photos/7550311/pexels-photo-7550311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    <div class="portfolio-title">
+                        <h1 class="title"><span>Clever Poster</span></h1>
+                        <p class="subtitle">Print Design</p>
+                    </div>
                 </div>
             </div>
-        </div>     
+            <div class="row align-items-start style">
+                <div class="col-md-4">
+                    <img class="portfolio-img"
+                        src="https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    <div class="portfolio-title">
+                        <h1 class="title"><span>Vinyl Record</span></h1>
+                        <p class="subtitle">Product Mock-Up</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="portfolio-img"
+                        src="https://images.pexels.com/photos/6272174/pexels-photo-6272174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    <div class="portfolio-title">
+                        <h1 class="title"><span>Treehouse Template</span></h1>
+                        <p class="subtitle">Web Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="portfolio-img"
+                        src="https://icdn.2cda.pl/obr/oryginalne/aa89e948554cd61239126224a70bdaa2.jpg">
+                    <div class="portfolio-title">
+                        <h1 class="title"><span>Burned Logo</span></h1>
+                        <p class="subtitle">Branding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <div class="footer">
         <ul>
@@ -116,9 +148,7 @@
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fas fa-at"></i></a></li>
         </ul>
-    </div>                       
-                    
-            
+    </div>
 
 
 
@@ -132,9 +162,12 @@
 
 
 
-    
+
+
+
 
 
 
 </body>
+
 </html>
