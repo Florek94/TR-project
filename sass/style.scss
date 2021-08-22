@@ -1,6 +1,10 @@
 $font-text:'Hahmlet', sans-serif;
 $font-header:'Playfair Display', sans-serif;
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 body {
     padding: 0;
     margin: 0;
@@ -21,7 +25,7 @@ body {
 }
 .navigation li {
     display: inline-block;
-    margin: 10px;
+    margin-bottom: 0;
     position: relative;
 }
 .navigation a {
@@ -41,6 +45,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 
 }
 .page-title {
@@ -83,21 +88,22 @@ body {
     color: gold;
     background-image: linear-gradient(90deg, gold 50%, transparent 50%);
     background: gold;
-    margin-left: 45%;
 }
 /* services */
 .wrap-container {
     text-align: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .services-list-container {
-    padding-top: 150px;
-    padding-right: 20px;
+    padding-top: 50px;
+    padding-right: 10px;
 }
 
-.services-list { list-style: none;
+.services-list { 
+    display: flex;
+    justify-content: center;
 }
   
 .services-list-item {
@@ -110,8 +116,7 @@ body {
       
 .services-list-item-link {
     color: gold;
-    display: table-cell;
-    vertical-align: middle; 
+    display: block;
     text-align: center;
     text-decoration: none;
     height: 80px;
@@ -127,37 +132,35 @@ body {
     padding-top: 150px;
     padding-bottom: 150px;
 }
+.portfolio-card {
+    margin-top: 10px;
+    background-color: white;
+}
 
 /* footer */
-.footer {
-    background: white;
+
+.author {
+    text-align: start;
+    
+}
+.page-social {
     text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
 }
-.footer li {
-    display: inline;
-}
-.footer ul li a {
-    font-size: 0;
-}
-.footer i {
-    font-size: 30px;   
+.page-social a {
     color: blue;
-    width: 80px;
-    height: 80px;
-}
-.adress {
-    color: black;
 }
 
 .portfolio-img {
     width: 100%;
-    height: 450px;
+    height: 230px;
 }
 
 .portfolio-title {
     background-color: white;
     width: 100%;
-    height: 140px;
+    padding: 20px;
 }
 
 .title {
@@ -178,4 +181,15 @@ body {
 }
 .style {
     padding-top: 150px;
+}
+@media (max-width:768px){
+   .navigation li{
+       display: block;
+   }
+   .page-title {
+       font-size: 25px;
+   } 
+   .page-subtitle {
+       font-size: 50px;
+   }
 }
